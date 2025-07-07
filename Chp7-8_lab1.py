@@ -22,6 +22,7 @@ def main():
         write(file_name)
     if l == 'r':
         first = read(file_name)
+        print("The content of the file is:\n")
         print(first)
 
 #Input if write
@@ -51,7 +52,6 @@ def write(file_name):
 
     zip_code = input('Enter the zip code: ')
     infile.write(zip_code)
-    #infile.write('\n')
 
     infile.close()
 
