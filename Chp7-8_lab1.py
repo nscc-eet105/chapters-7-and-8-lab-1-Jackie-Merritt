@@ -1,4 +1,5 @@
 #Jackie_Merritt-Chp7_8_Lab1-7/1/2025
+import sys
 
 def main():
     
@@ -64,6 +65,7 @@ def read(file_name):
 
     except FileNotFoundError:
         print('Invalid, please enter an existing file name')
+        sys.exit()
 
 if __name__ == '__main__':
     main()
